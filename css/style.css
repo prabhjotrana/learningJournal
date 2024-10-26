@@ -1,0 +1,75 @@
+html, 
+body ,h1,ul,img,li,p,h2{
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+}
+img{
+    width: 100%;
+}
+/* header container*/
+.header-container{
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: white;
+    color: #0E0E0E;
+    justify-content: space-between;
+    padding: 1em .5em;
+}
+.logo{
+    width: 23px;
+    height: auto;
+    margin-left: .5em;
+}
+.learning-journal{
+    font-weight: 700;
+    font-size: 1rem;
+    margin-right: auto;
+    margin-left: .25em;
+ }
+.nav-container{
+    padding: 0px;
+    flex-grow: 1;
+}
+
+.nav-items{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: right;
+    gap:12%;
+    margin-right: 5%;
+}
+
+li a{
+    color: #0E0E0E;
+    text-decoration: none;
+    font-size:.75rem;
+    font-family:Roboto;
+    font-weight: 600;
+}
+/* main container */
+.main-container{   
+    display: flex;
+    flex-direction: column;
+}
+section{
+    font-weight: 400;
+    font-size: 1rem;
+
+}
+.section-1{
+    color:red;
+    background-image: url("/images/logo.png");
+    background-color: yellow;
+    background-position: left bottom;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40vh;
+}
+@media(min-width:576px){
+    .section-1{
+        height: 60vh;
+    }
+}
