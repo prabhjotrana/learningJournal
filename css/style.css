@@ -1,5 +1,5 @@
 html, 
-body ,h1,ul,img,li,p,h2,h3{
+body ,div,h1,ul,img,li,p,h2,h3{
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
@@ -55,7 +55,12 @@ li a{
     display: flex;
     flex-direction: column;
     background-color:white ;
-    gap:2.125rem;
+    gap:1.3rem;
+}
+.inner-grid{
+    display: flex;
+    flex-direction: column;
+    gap:1.5em
 }
 section{
     font-weight: 400;
@@ -90,8 +95,7 @@ section p{
 .section-1{
     margin: 0;
     justify-content:end;
-    gap: 1.25rem;
-    padding-bottom: 2.00rem;
+    padding-bottom: 3.00rem;
     background-image: url("/images/section1img.png");
     background-position: left 70%;
     background-size: cover;
@@ -146,15 +150,17 @@ section p{
     }
 
     /* grid */
-    .main-container{
+    .inner-grid{
         display: grid;
-        margin: 0em 1em;
+        margin: 0em 1.25em;
         gap: 1em;
         grid-template: auto/repeat(12, 1fr);
+        grid-column-gap: 20px;
         grid-template-areas: 
             "sec1 sec1 sec1 sec1 sec1 sec1 sec1 sec1 sec1 sec1 sec1 sec1"
             "sec2 sec2 sec2 sec2 sec3 sec3 sec3 sec3 sec4 sec4 sec4 sec4" ;
     }
+       
     .section-1{
         grid-area: sec1;
     }
